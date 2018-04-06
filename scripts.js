@@ -3,7 +3,7 @@ $.getJSON( "https://api.airtable.com/v0/appmZrzSVYBsjqjl9/zumba%20locations?api_
  var items = [];
   $.each( data.records, function( index, val ) {
 
-    items.push( "<li id='" + val.id + "'>" + val.fields["gym"] + "</li>" );
+    items.push( "<li id='" + val.id + "'>" + val.fields["Name"] + "</li>" );
   });
 
   $( "<ol/>", {
